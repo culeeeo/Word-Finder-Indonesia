@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencari Kata 200K</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+        
+ <header class="profile-header">
+            <div class="profile-img-box">
+                <img src="ram.jpg" alt="Foto RamKlontong" id="profile-pic">
+            </div>
+            
+            <div class="profile-text">
+                <div class="name-container">
+                    <h1 class="profile-name">RamKlontong</h1>
+                    <span class="badge verified">✓</span>
+                    <span class="badge vip">Learner Index</span>
+                    <span class="badge dev">🛠️ DEV</span>
+                </div>
+                <p class="profile-desc">Data KBBI (114K+ kata)</p>
+            </div>
+        </header>
+
+        <div class="tabs">
+            <button class="tab active" data-mode="awalan">Awalan</button>
+            <button class="tab" data-mode="akhiran">Akhiran</button>
+            <button class="tab" data-mode="awalakhir">Awal+Akhir</button>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Memuat database..." autocomplete="off">
+            <button id="clear-btn">✕</button>
+        </div>
+
+        <div class="info-bar">
+            <span id="result-count">0 ditemukan</span>
+        </div>
+        <div class="results-container">
+            <ul id="results-list"></ul>
+            
+            <div class="pagination">
+                <button id="prev-btn">«</button>
+                <span id="page-info">1 / 1</span>
+                <button id="next-btn">»</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
